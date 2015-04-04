@@ -1,1 +1,4 @@
-<%= @place %>
+<h1> Lonely Planet top 3 sights </h1>
+<% @sights[0..2].each do |sights| %>
+  <h2> <%= sights.text %> </h2>
+<% end %>
